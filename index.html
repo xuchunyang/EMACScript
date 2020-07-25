@@ -6,6 +6,11 @@
     <title>EMACScript 测试</title>
   </head>
   <body>
+    <script>
+      const para = document.createElement("p");
+      para.textContent = "你的浏览器不支持 EMACScript，请使用 M-x eww 访问";
+      document.body.appendChild(para);
+    </script>
     <script type="text/emacscript">
       (insert "当前时间: " (current-time-string))
     </script>
